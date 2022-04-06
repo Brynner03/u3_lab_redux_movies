@@ -1,17 +1,19 @@
 import './styles/App.css'
-import { Route, Routes } from 'react-router-dom'
-import ListMovies from './components/ListMovies'
+import { Routes, Route } from 'react-router-dom'
+import Movies from './components/Movies'
 import MovieDetails from './components/MovieDetails'
+
 
 const App = () => {
   
   return (
     <div className="App">
-      <h3>Movies</h3>
+      <h3>TheMovieDB Brynner</h3>
       <Routes>
-      <Route path ="/" element={<ListMovies />} />
-      <Route path = "/:id" element={<MovieDetails />} />
+        <Route path="/" element={<Movies />} />
+          <Route path="/:id" element={<MovieDetails />} />
       </Routes>
+     
     </div>
   )
 }
