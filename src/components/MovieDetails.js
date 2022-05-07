@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { LoadMovieDetails} from '../store/actions/MovieActions'
+import { LoadMovieDetails } from '../store/actions/MovieActions'
 import {POSTER_PATH} from '../globals'
 
 const mapStateToProps = ({ movieDetailState }) => {
